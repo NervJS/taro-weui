@@ -1,0 +1,12 @@
+.test {
+  // position: fixed;
+  // bottom: 0;
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+  transform: translateY(100%);
+  transition: transform .3s ease-in;
+}
+.test-show{
+  transform: translateY(0);
+}
