@@ -10,6 +10,11 @@ const config = {
   sourceRoot: 'src',
   outputRoot: 'dist',
   plugins: ['@tarojs/plugin-html'],
+  plugins: [
+    ['@tarojs/plugin-html', {
+      pxtransformBlackList: [/page|h5|weui/]
+    }]
+  ],
   defineConstants: {
   },
   copy: {
@@ -24,10 +29,7 @@ const config = {
     debugReact: true,
     postcss: {
       pxtransform: {
-        enable: true,
-        config: {
-          selectorBlackList: [/page|h5|weui/]
-        }
+        enable: true
       },
       url: {
         enable: true,
