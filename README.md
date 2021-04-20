@@ -26,42 +26,36 @@ taro build --type weapp --watch
 
 `<body>` 标签使用 `<div className='h5-body'>` 进行模拟。
 
-### 2. `<span>`
+### 2. 浏览器默认样式
 
-在编写 H5 应用时，很多时候 `<span>` 会包裹 `<img>`、`<div>` 等元素。
-
-而在小程序中 `<Text>` 组件只能嵌套 `<Text>` 组件。因此为了适配 `<span>` 标签较为灵活的用法， Taro 把 `<span>` 标签对应为 `<View>` 组件。
-
-`<span>` 对应 `<View>` 又会引入样式问题，我们可以增加一条全局样式规则或引入浏览器的默认样式来解决：
-
-1. 增加一条全局样式规则
-
-```sass
-// app.css
-.h5-span {
-  display: inline
-}
-```
-
-2. 引入浏览器的默认样式
-
-```js
-// html4
-import '@tarojs/taro/html.css';
-// html5
-import '@tarojs/taro/html5.css';
-```
-
-### 3. 浏览器的默认样式
+#### 方式一、开发者可以选择在全局引入浏览器的默认样式
 
 Taro 提供两种内置样式我们可以直接引入生效：
 
 - `@tarojs/taro/html.css`: W3C HTML4 的内置样式，只有 HTML4 标签样式，体积较小，兼容性强，能适应大多数情况。
 - `@tarojs/taro/html5.css`: Chrome(Blink) HTML5 的内置样式，内置样式丰富，包括了大多数 HTML5 标签，体积较大，不一定支持所有小程序容器。
 
-> 以往编写 H5 应用时，我们常常会写一些样式去重置浏览器默认样式。所以一般情况不需要引入，或者可以手动挑选必须的样式。
+```scss
+// app.css
+// html4
+import '@tarojs/taro/html.css';
+// html5
+import '@tarojs/taro/html5.css';
+```
 
-### 4. 尺寸单位
+#### 方式二、只摘取部分需要的浏览器默认样式
+
+以往编写 H5 应用时，我们常常会写一些样式去重置浏览器默认样式。所以一般情况不需要引入，或者可以手动挑选必须的样式。
+
+```sass
+// app.css
+// 以下是为了适配 VantUI 项目所需要的默认样式
+.h5-span {
+  display: inline;
+}
+```
+
+### 3. 尺寸单位
 
 Taro 默认会对开发者编写的尺寸进行转换：
 
@@ -85,7 +79,7 @@ config = {
 }
 ```
 
-### 5. 样式选择器
+### 4. 样式选择器
 
 以下选择器不能正常工作：
 
