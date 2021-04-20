@@ -7,7 +7,7 @@ export default function () {
   const handleClick = useCallback((idx) => setActive(idx), [])
 
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page tabbar js_show'>
         <div className='page__bd' style={{height: '100%'}}>
             <div className='weui-tab'>
@@ -53,6 +53,6 @@ export default function () {
             </div>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

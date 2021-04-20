@@ -8,7 +8,7 @@ export default function () {
   const hideTopTips = useFadeOut(topTips)
 
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page top-tips js_show'>
         <div className='page__hd'>
             <h1 className='page__title'>TopTips</h1>
@@ -21,6 +21,6 @@ export default function () {
 
         <div className='weui-toptips weui-toptips_warn' id='topTips' ref={topTips}>错误提示</div>
       </div>
-    </div>
+    </body>
   )
 }

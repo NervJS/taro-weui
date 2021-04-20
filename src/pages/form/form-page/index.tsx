@@ -23,7 +23,7 @@ export default function () {
   }, [toastFadeIn, toastFadeOut])
 
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page js_show'>
         <div className='weui-form'>
           <div className='weui-form__text-area'>
@@ -85,6 +85,6 @@ export default function () {
             </div>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

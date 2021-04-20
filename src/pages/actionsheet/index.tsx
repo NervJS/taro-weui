@@ -25,7 +25,7 @@ export default function () {
   const showAndroidActionSheet = useFadeIn(androidRef)
 
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page actionsheet js_show'>
         <div className='page__hd'>
             <h1 className='page__title'>ActionSheet</h1>
@@ -82,6 +82,6 @@ export default function () {
             </div>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

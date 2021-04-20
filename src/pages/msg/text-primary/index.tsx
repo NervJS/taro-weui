@@ -2,7 +2,7 @@ import { Component, createRef, useEffect, useRef, useState } from 'react'
 
 export default function () {
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page text_primary js_show'>
         <div className='weui-msg'>
             <div className='weui-msg__text-area'>
@@ -19,6 +19,6 @@ export default function () {
             </div>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

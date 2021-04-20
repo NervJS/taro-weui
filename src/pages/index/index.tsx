@@ -17,7 +17,7 @@ export default class Index extends Component {
   render () {
     const isFold = this.state.isFold
     return (
-      <div className='h5-body'>
+      <body>
         <div className='page home js_show'>
             <div className='page__hd'>
                 <h1 className='page__title'>
@@ -248,7 +248,7 @@ export default class Index extends Component {
                 </ul>
             </div>
         </div>
-      </div>
+      </body>
     )
   }
 }

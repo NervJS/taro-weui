@@ -2,7 +2,7 @@ import { Component, createRef, useEffect, useRef, useState } from 'react'
 
 export default function () {
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page article js_show'>
         <div className='page__hd'>
             <h1 className='page__title'>Article</h1>
@@ -39,6 +39,6 @@ export default function () {
             </article>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

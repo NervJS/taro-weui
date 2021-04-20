@@ -30,7 +30,7 @@ export default function () {
   const [isShowDialog2, dialog2, showIOSDialog2, hideIOSDialog2] = useDialog()
 
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page half-screen-dialog js_show'>
         <div className='page__hd'>
             <h1 className='page__title'>Half-screen Dialog</h1>
@@ -96,6 +96,6 @@ export default function () {
             </div>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

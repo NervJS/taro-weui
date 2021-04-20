@@ -83,7 +83,7 @@ export default function () {
   }, [inputText, setInputText])
 
   return (
-    <div className='h5-body'>
+    <body>
       <div className='weui-toptips weui-toptips_warn js_tooltips' style={{display: 'none'}} ref={tooltips}>错误提示</div>
       <div className='page js_show'>
         <div className='weui-form'>
@@ -186,6 +186,6 @@ export default function () {
             </div>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

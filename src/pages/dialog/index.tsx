@@ -16,7 +16,7 @@ export default function () {
   const [androidDialog2, androidDialog2In, androidDialog2Out] = useDialog()
 
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page dialog js_show'>
         <div className='page__hd'>
             <h1 className='page__title'>Dialog</h1>
@@ -77,6 +77,6 @@ export default function () {
             </div>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

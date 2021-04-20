@@ -24,7 +24,7 @@ export default function () {
   const [textToast, onTextToast] = useOnClick()
 
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page toast js_show'>
         <div className='page__hd'>
             <h1 className='page__title'>Toast</h1>
@@ -79,6 +79,6 @@ export default function () {
             </div>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

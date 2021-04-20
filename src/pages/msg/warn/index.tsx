@@ -2,7 +2,7 @@ import { Component, createRef, useEffect, useRef, useState } from 'react'
 
 export default function () {
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page warn js_show'>
         <div className='weui-msg'>
             <div className='weui-msg__icon-area'><i className='weui-icon-warn weui-icon_msg'></i></div>
@@ -28,6 +28,6 @@ export default function () {
             </div>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

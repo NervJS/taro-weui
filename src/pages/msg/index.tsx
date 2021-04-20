@@ -2,7 +2,7 @@ import { Component, createRef, useEffect, useRef, useState } from 'react'
 
 export default function () {
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page msg js_show'>
         <div className='page__hd'>
             <h1 className='page__title'>Msg</h1>
@@ -18,6 +18,6 @@ export default function () {
             <a href='/pages/msg/area-cell/index' className='weui-btn weui-btn_default'>跳转列表场景</a>
         </div>
       </div>
-    </div>
+    </body>
   )
 }

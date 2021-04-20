@@ -2,7 +2,7 @@ import { Component, createRef, useEffect, useRef, useState } from 'react'
 
 export default function () {
   return (
-    <div className='h5-body'>
+    <body>
       <div className='page form js_show'>
         <div className='page__hd'>
             <h1 className='page__title'>Form</h1>
@@ -21,6 +21,6 @@ export default function () {
             <a href='/pages/form/form-textarea/index' className='weui-btn weui-btn_default'>文本域</a>
         </div>
       </div>
-    </div>
+    </body>
   )
 }
