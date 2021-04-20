@@ -47,7 +47,7 @@ import '@tarojs/taro/html5.css';
 
 以往编写 H5 应用时，我们常常会写一些样式去重置浏览器默认样式。所以一般情况不需要引入，或者可以手动挑选必须的样式。
 
-```sass
+```scss
 // app.css
 // 以下是为了适配 VantUI 项目所需要的默认样式
 .h5-span {
