@@ -4,7 +4,7 @@
 
 在 Taro 中使用微信官方组件库 [WEUI](https://github.com/Tencent/weui)。
 
-`WEUI` 官方示例：https://weui.io/。
+`WEUI` 官方示例：https://weui.io/
 
 ## Getting Start
 
